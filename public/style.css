@@ -1,0 +1,308 @@
+* {
+    font-family: 'Comic Sans MS';
+}
+
+.cont {
+    width: 500px;
+    border: 1px solid black;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+/*HEADER.JS--------------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 470px;
+    height: 40px;
+    padding: 0px 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+
+.headerItems {
+    width: 90px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.headerItems:hover {
+    color: red;
+}
+
+
+    
+#headerItem1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 60vw;
+}
+
+#headerItem2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 40vw;
+}
+
+
+/*BORDS.JS---------------*/
+.bordsCont {
+    padding: 10px;
+    height: 450px;
+}
+
+/*PROJECTONBOARD.JS------------*/
+.projectOnBoard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.liOnBoard {
+    list-style-type:none;
+    margin: 6px;
+    font-size: 14px;
+}
+
+.ulOnBoard {
+    width: 460px;
+    padding-left: 10px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+.projectOnBoard p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 73%;
+}
+
+
+
+.projectOnBoard :hover{
+    cursor: pointer;
+    color: red;
+}
+
+
+/*ALLTASKS.JS--------------*/
+.allTasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.allTasks>div:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    border: 1px solid black;
+}
+input:focus {
+    outline: 1px solid rgb(0, 0, 0);
+    border-radius: 0px;
+}
+
+
+#filtres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 186px;
+    width: 80px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#filtres:hover {
+    color: red;
+}
+
+#tasksList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 460px;
+    height: 500px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid black;
+}
+
+#tasksList div:last-child {
+    display: flex;
+    justify-content: center;
+    margin-left: 164px;
+}
+
+/*CREATETASK.JS-------------*/
+#createTaskBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#createTaskBtn:hover {
+    color: red;
+}
+
+/*BORD.JS--------------------*/
+.bordCont {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.bordCont p {
+    height: 20px;
+    margin: 10px;
+}
+
+.bordTable {
+    display: flex;
+    border-left: 3px solid dodgerblue;
+}
+
+.bordColumns {
+    width: 33%;
+}
+
+.bordTableHeaders {
+    border: 3px solid dodgerblue;
+    border-left-style: none;
+    border-bottom-style: none;
+    color: dodgerblue;
+    padding-left: 5px;    
+}
+
+.bordTableBodys {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    border: 3px solid dodgerblue;
+    border-left-style: none;
+    padding: 3px;
+    overflow-y: auto;
+}
+
+/*CREATEEDITTASK.JS-----------*/
+.createEditTask {
+    position: absolute;
+    top: 8px;
+    left: 526px;
+}
+
+@keyframes goToUp {
+    from {
+        top: 8px;
+    }
+
+    to {
+        top: -320px;
+    }
+}
+@keyframes goToDown {
+    from {
+        top: -320px;
+    }
+
+    to {
+        top: 8px;
+    }
+}
+
+.asForm {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 340px;background-color: white;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+    
+.createEditTaskItem {
+    margin: 5px 0px;
+}
+   
+/*FORMFOOTER.JS------------*/
+footer {
+    display: flex;
+    padding: 10px;
+}
+
+.toBoard {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 120px;
+    font-size: 13px;
+    padding: 3px;
+    margin-right: 120px;
+    cursor: pointer;
+}
+
+.toBoard:hover {
+    color: red;
+}
+
+.submitBtn {
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.submitBtn:hover {
+    color: red;
+}
+
+/*TASKLIST.JS--------------*/
+.taskListItem {
+    list-style-type:none;
+    padding: 3px 0px;
+    cursor: pointer;
+}
+.taskListItem:hover {
+    color: red;
+}
+
+.taskListUL{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/*INPROGRESSTASK.JS, DONETASK.JS, TODOTASK.JS------------*/
+.tasksOfProject {
+    list-style-type:none;
+    padding:  5px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid silver;
+}
+
+.tasksOfProject:hover {
+    color: red;
+}
+
+.tasksOfProjectUL {
+    padding-left:  5px;
+}
+
